@@ -35,19 +35,19 @@ async function checkweather(city) {
     document.getElementsByClassName("wind")[0].innerHTML = data.wind.speed + " Km/hr";
     if(data.weather[0].main =="Clouds")
     {
-     weathericon.innerHTML=`<i class="fa-solid fa-cloud fa-xl" style="color: #ffffff;"></i>`
+     weathericon.innerHTML=`<i class="fa-solid fa-cloud fa-2xl" style="color: #ffffff;"></i>`
     }
     else if(data.weather[0].main=="Rain"){
-      weathericon.innerHTML=`<i class="fa-solid fa-cloud-rain fa-xl" style="color: #ffffff;"></i>`
+      weathericon.innerHTML=`<i class="fa-solid fa-cloud-rain fa-2xl" style="color: #ffffff;"></i>`
   } 
   else if(data.weather[0].main=="Drizzle"){
-    weathericon.innerHTML=`<i class="fa-solid fa-cloud-sun-rain fa-xl" style="color: #ffffff;"></i>`
+    weathericon.innerHTML=`<i class="fa-solid fa-cloud-sun-rain fa-2xl" style="color: #ffffff;"></i>`
 } 
 else if(data.weather[0].main=="Mist"){
-  weathericon.innerHTML=`<i class="fa-solid fa-smog fa-xl" style="color: #ffffff;"></i>`
+  weathericon.innerHTML=`<i class="fa-solid fa-smog fa-2xl" style="color: #ffffff;"></i>`
 } 
 else if(data.weather[0].main=="Snow"){
-  weathericon.innerHTML=`<i class="fa-solid fa-snowflake fa-xl" style="color: #ffffff;"></i>`
+  weathericon.innerHTML=`<i class="fa-solid fa-snowflake fa-2xl" style="color: #ffffff;"></i>`
 } }
   catch (error) {
     console.error("An error occurred:", error);
