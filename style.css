@@ -343,5 +343,12 @@ body{
         transition: 1s;
     }
 
+   .appname{
+    font-size: 30px;
+   }
+   .container{
+    width: 90vb;
+    height: 90vh;
+   }
     
 }
